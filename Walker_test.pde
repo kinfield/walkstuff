@@ -23,7 +23,7 @@ Walker2 w2;
 Walker3 w3;
 
 void setup() {
-  size(800,600);
+  size(1920,1080);
   noSmooth();
   frameRate(500);
   int wideCount = width / unit;
@@ -39,7 +39,7 @@ void setup() {
   
   
 
-  
+
   w = new Walker();
  w2 = new Walker2();
    w3 = new Walker3();
