@@ -1,10 +1,15 @@
-class Walker3 {
+class Walker {
   int x,y;
+  float thickness;
   // A random walker object!
+    
+
+
   
-  Walker3() {
-    x = width/4;
-    y = height/4;
+  
+  Walker() {
+    x = width/8;
+    y = height/2;
   
   }
   
@@ -12,7 +17,7 @@ class Walker3 {
 
   
   void render() {
-      stroke(r, g, b);
+  stroke(r);
     point(x,y);
   }
   
@@ -20,15 +25,15 @@ class Walker3 {
 void step() {
   int choice = int(random(4));
   if (choice == 0) {
-    x--;
+    x++;
   }
   
   
-  else if (choice == 1) {
-    x++; }
+  else if (choice == 0) {
+    x--; }
     
     
-    else if (choice == 2) {
+    else if (choice == 1) {
       y++; }
       
 

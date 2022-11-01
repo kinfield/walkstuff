@@ -12,23 +12,23 @@ class Walker2 {
 
   
   void render() {
-    stroke(#BF6747);
+      stroke(g);
     point(x,y);
   }
   
 
 void step() {
   int choice = int(random(4));
-  if (choice == 0) {
+  if (choice == 1) {
     x--;
   }
   
   
-  else if (choice == 1) {
+  else if (choice == randomGaussian()) {
     x++; }
     
     
-    else if (choice == 2) {
+    else if (sin(choice) == randomGaussian()) {
       y++; }
       
 
